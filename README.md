@@ -1,0 +1,2 @@
+# SquidProxyAdBlocker
+Squid Proxy AdBlocker
