@@ -2,7 +2,7 @@
 SquidProxyAdBlocker is a filtering adblocker (and track-blocker) ([Squid](http://www.squid-cache.org/ "Squid")) proxy.
 
 ### Run 
-`docker run --name squidproxyadblocker -p 3128:3128 -p 3129:3129 pgnunes/squidproxyadblocker` 
+`docker run --rm --name squidproxyadblocker -p 3128:3128 -p 3129:3129 pgnunes/squidproxyadblocker` 
 
 ### Browser/Network Configuration
 Configure your browser/network proxy settings to the host where SquidProxyAdBlocker is running like (running locally):
