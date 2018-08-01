@@ -35,10 +35,5 @@ RUN sed -i '1ihttp_port 3129 transparent' $CONF_FILE
 # Proxy port
 EXPOSE 3128 3129
 
-# Call initd service to ensure folders, settings, etc. are set in place
-# CMD ["/usr/sbin/service","squid","start", ";", "/bin/bash","/updateAdServersList.sh"]
-# CMD ["/bin/bash","/updateAdServersList.sh"]
-
-# Run Squid in the foreground
-#ENTRYPOINT ["/bin/bash","/updateAdServersList.sh", "&", "/usr/sbin/squid", "-N", "-d1"]
+# Entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
