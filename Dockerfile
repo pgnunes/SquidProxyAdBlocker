@@ -6,7 +6,7 @@ ENV CONF_FILE=/etc/squid/squid.conf
 # Update system and install squid
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get install -y squid3 nano curl cron && \
+    apt-get install -y squid nano curl cron && \
     apt-get -y autoremove --purge && \
     apt-get clean
 
